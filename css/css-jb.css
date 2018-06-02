@@ -1,0 +1,467 @@
+/*顶部区域*/
+.top{
+    width: 100%;
+    height: 60px;
+    /*background-color: #ff0000;*/
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+/*顶部内容区域居中*/
+.top .top-in{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    /*background-color: #fd1495;*/
+}
+/*顶部左logo*/
+/*标签很重要，用H1标签包裹a标签做*/
+.top .top-in .top-left{
+    width: 190px;
+    height:100%;
+    float: left;
+    /*background-color: #f0f000;*/
+}
+/*设置h标签*/
+.top .top-in .top-left>h1{
+    width: 100%;
+    height: 100%;
+}
+/*设置h标签里的a标签*/
+.top .top-in .top-left>h1>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/nubia-logo.png);
+}
+/*顶部右区域*/
+
+/*两个ul，一个导航条，一个登陆系统*/
+.top .top-in .top-right{
+    width: 740px;
+    height:100%;
+    float: right;
+    /*background-color: #f0f000;*/
+
+}
+/*导航条左浮*/
+.top-right .top-nav{
+    width: 550px;
+    height: 100%;
+    float: left;
+    /*background-color: #87ccea;*/
+
+}
+/*li标签左浮动*/
+.top-right .top-nav>li{
+    float: left;
+}
+/*导航字体设置*/
+.top-right .top-nav>li>a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 60px;
+    margin-left: 40px;
+}
+/*导航a标签鼠标检测，颜色变红*/
+.top ul>li>a:hover{
+    color: #e82c07;
+}
+/*登陆右浮*/
+.top-right .top-login{
+    width: 150px;
+    height: 100%;
+    float: right;
+    /*background-color: #87ccea;*/
+
+}
+/*登陆里面内容右浮*/
+.top-right .top-login>li{
+    float: right;
+    line-height: 60px;
+    margin-left: 10px;
+}
+/*登陆内容颜色*/
+.top-right .top-login>li>a{
+    color: #ccc;
+}
+/*登陆区域小图标*/
+.top-login>li:nth-child(3){
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/nubia-syb-all.png);
+    margin-top: 15px;
+}
+/*顶部结束*/
+
+/*广告区域开始*/
+.banner{
+    width: 100%;
+    height: 860px;
+    margin-top: 60px;
+    /*background-color: #00ff00;*/
+/*广告导航区域*/
+}
+/*广告导航区域*/
+/*导航外框*/
+.banner .nav-out{
+    width: 100%;
+    height: 121px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 2;
+}
+/*导航内框*/
+.banner .nav{
+    width: 1200px;
+    height: 121px;
+    margin: 0 auto;
+}
+/*ul设置*/
+.nav>ul{
+    width: 100%;
+    height: 100%;
+    /*background-color: #ffff00;*/
+    padding-left: 75px;
+    padding-right: 75px;
+    box-sizing: border-box;
+}
+/*li设置*/
+.nav>ul>li{
+    width: 150px;
+    height: 100%;
+    /*background-color: #00ff00;*/
+    float: left;
+    text-align: center;
+}
+/*图片与a标签设置*/
+.nav>ul>li>a>img{
+    width: 120px;
+    height: 80px;
+    margin-top: 15px;
+}
+/*底部边框*/
+.nav>ul>li:hover{
+    border-bottom: 3px solid #ff0000;
+    box-sizing: border-box;
+}
+/*广告轮播图部分*/
+.banner .figure{
+    width: 100%;
+    height: 600px;
+    background-color: #fd1495;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+/*轮播图片设置*/
+/*如果图片大于父元素的宽度，图片不能用常规方法居中*/
+/* 可以采取定位流，但是也有弊端*/
+/*可以使用父元素text-alian:center,
+然后图片设置margin:0 -100%;
+*/
+.figure>img{
+    height: 100%;
+    margin: 0px -100%;
+}
+/*序号区域*/
+.figure>ol{
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom: 10px;
+}
+.figure>ol>li{
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    margin-left: 15px;
+    float: left;
+    border-radius: 50%;
+    /*transparent 透明的*/
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+/*鼠标悬停动画*/
+.figure>ol>li:hover{
+    border: 2px solid #ff0000;
+    background-color: transparent;
+    transform: scale(1.3,1.3);
+}
+
+/*广告视频区域*/
+.banner .video{
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+    /*background-color: #dad;*/
+}
+/*视频分区*/
+.video>ul{
+    width: 1200px;
+    height: 250px;
+    /*background-color: #ff0000;*/
+}
+/*三个视频分区*/
+.video>ul>li{
+    width: 396px;
+    height: 250px;
+    background-color: #000000;
+    float: left;
+    margin-right: 6px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+/*单独设置了第三个的右变距，也可以用伸缩布局*/
+.video>ul>li:nth-of-type(3){
+    margin-right: 0px;
+}
+/*视频图片*/
+.video>ul>li>img{
+    height: 100%;
+    margin: 0 -100%;
+}
+.video>ul>li>div{
+    width: 100%;
+    height: 155px;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0; /* 元素透明度，子元素也会全部透明*/
+}
+.video>ul>li>div>h3{
+    font-size: 16px;
+    color: #ddd;
+    line-height: 40px;
+}
+.video>ul>li>.video-info>p{
+    color: #ddd;
+}
+.video>ul>li:hover .video-info{
+    opacity: 1;
+}
+.video>ul>li:hover >img{
+    opacity: 0.5;
+}
+.video>ul>li:hover .video-info>img{
+    animation: sport 2s .5s ease-in-out infinite;
+}
+@keyframes sport {
+    20%{
+        transform: scale(.8);
+    }
+    40%{
+        transform: scale(1.2);
+    }
+    60%{
+        transform: scale(.9);
+    }
+    80%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* 广告区域结束*/
+
+/*内容区域开始*/
+.content{
+    width: 100%;
+    height: 1883px;
+}
+.content>dl{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content>dl>dt{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.content>dl>dt>h3{
+    font-size: 35px;
+    color: #333;
+}
+.content>dl>dt p{
+    color: #e8340e;
+    margin-top: 20px;
+}
+/*精品手机*/
+.content .content-phone{
+    width: 1200px;
+    height: 1200px;
+}
+.content .content-phone>li{
+    float: left;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.content .content-phone>li:nth-of-type(1){
+    width: 1200px;
+    height: 395px;
+    margin-bottom: 10px;
+
+}
+.content .content-phone>li:nth-of-type(2){
+    width: 395px;
+    height: 795px;
+    margin-right: 10px;
+
+}
+.content .content-phone>li:nth-of-type(3){
+    width: 795px;
+    height: 390px;
+    margin-bottom: 10px;
+
+}
+.content .content-phone>li:nth-of-type(4){
+    width: 390px;
+    height: 395px;
+    margin-right: 10px;
+
+}
+.content .content-phone>li:nth-of-type(5){
+    width: 395px;
+    height: 395px;
+    
+}
+/*图片设置*/
+.content-phone>li>img{
+    width: 100%;
+    transition: all 1s;
+}
+.content .content-phone>li:nth-of-type(1)>img{
+    margin-top: 60px;
+    margin-left: -100px;
+}
+.content .content-phone>li:nth-of-type(3)>img{
+    margin-left: 70px;
+}
+.content-phone .phone-big:hover>img{
+    transform: scale(1.2);
+}
+/*描述设置*/
+.content-phone .phone-des{
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 10px;
+}
+.content-phone .phone-des>h4{
+    font-size: 20px;
+    color: #444;
+}
+.content-phone .phone-des>p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.content-phone .phone-des>span{
+    display: inline-block;
+    width: 108px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #555;
+}
+/*第一个描述单独设置*/
+.content-phone>li:nth-of-type(1)>.phone-des{
+    left: 0%;
+    margin-left: 830px;
+    bottom: 150px;
+}
+/*过渡设置*/
+.content-phone>li:nth-of-type(1):hover>img{
+    margin-left: 10px;
+}
+.content-phone>li:nth-of-type(3):hover>img{
+    margin-left: 0px;
+}
+/*全部配件*/
+.content .content-accessories{
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .content-accessories>li{
+    width: 294px;
+    height: 300px;
+    float: left;
+    background-color: #fff;
+    overflow: hidden;
+
+}
+/*图片设置*/
+.content-accessories>li>img{
+    width: 100%;
+    transition: all 1s;
+}
+/*描述设置*/
+.content-accessories>li>p{
+    text-align: center;
+    margin-top: 25px;
+}
+/*过渡设置*/
+.content-accessories>li:hover>img{
+    transform: scale(1.2);
+}
+/*底部区域开始*/
+.footer{
+    width: 100%;
+    height: 497px;
+}
+/*基本结构*/
+.footer .foot-con{
+    width: 1200px;
+    height: 296px;
+    margin: 0 auto;
+}
+.footer .foot-con>div{
+    width: 200px;
+    height: 296px;
+    float: left;
+    text-align: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+    line-height: 1.8;
+}
+.foot-con>div>h5{
+    font-size: 18px;
+    color: inherit;
+}
+.foot-con>div>ul>li>a:hover{
+    color: #ff0000;
+}
+.footer .foot-container{
+    width:100%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+    overflow: hidden;
+    background-color: #fff;
+}
+.foot-container>img{
+    margin-top: -50px;
+    margin-bottom: 15px;
+}
+.foot-container>p>img{
+    height: 12px;
+}
+.foot-container>p>a:hover{
+    color: #ff1111;
+}
